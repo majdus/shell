@@ -3,3 +3,6 @@ find . -type d -exec chmod 775 {} \;
 
 #add x to all .sh files
 find . -type f -name "*.sh"  -exec chmod +x {} \;
+
+#grep string in founded files
+find . -type f -name "*ext*"  -exec grep -H stringTogrep {} +
